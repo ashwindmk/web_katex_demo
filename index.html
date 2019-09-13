@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KaTeX</title>
+
+        <style>
+            body {
+              padding: 10em;
+            }
+        </style>
+
+        <!-- Local -->
+        <!-- 
+        <link rel="stylesheet" href="./katex/katex.min.css">
+        <script src="./katex/katex.min.js"></script>
+        <script 
+            defer src="./katex/auto-render.min.js" 
+            onload="renderMathInElement(document.body);">
+        </script> 
+        -->
+
+        <!-- CDN -->
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+        <script 
+            defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" 
+            integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" 
+            crossorigin="anonymous"
+            onload="renderMathInElement(document.body);">
+        </script>
+    </head>
+
+    <body>
+        <h2>Katex Demo</h2>
+
+        <br/><br/>
+        <h4>Fractions</h4>
+        <div>
+            <p>
+                $$
+                \frac{2x}{5y}
+                $$
+            </p>
+
+            <p>Inline: \( \frac{2x}{5y} \) </p>
+
+            <p>
+                $$
+                \frac{(k+1)((k+1)+1)}{2}
+                $$
+            </p>
+        </div>
+
+        <br/><br/>
+        <h4>Integration</h4>
+        <div>
+            <p>
+                $$ 
+                \int f(x) dx
+                $$
+            </p>
+        </div>
+
+
+        <br/><br/>
+        <h4>Definite Integration</h4>
+        <div>
+            <p>
+                $$
+                \int_0^\infty e^{t} dt
+                $$
+            </p>
+        </div>
+
+
+        <br/><br/>
+        <h4>Differentiation</h4>
+        <div>
+            $$
+            y = \frac{\partial u}{\partial t}
+            $$
+        </div>
+
+
+        <br/><br/>
+        <h4>Matrices</h4>
+        <div>
+            <p>
+                $$
+                \begin{matrix} 
+                1 & 0 \\ 
+                0 & 1 
+                \end{matrix}
+                $$
+            </p>
+        </div>
+
+
+        <br/><br/>
+        <h4>Braces Matrices</h4>
+        <div>
+            <p>
+                $$
+                \begin{Bmatrix} 
+                1 & 0 \\ 
+                0 & 1 
+                \end{Bmatrix}
+                $$
+            </p>
+        </div>
+
+
+        <br/><br/>
+        <h4>Letters and Symbols</h4>
+        <div>
+            <a href="https://katex.org/docs/supported.html">Refer here</a>
+        </div>
+
+
+        <br/><br/>
+        <h4>Summation</h4>
+        <div>
+            $$
+            \sum_{\forall i}{x_i^{2}}
+            $$
+        </div>
+
+
+        <br/><br/>
+        <h4>Complex</h4>
+        <div>
+            $$
+            \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+            $$
+        </div>
+    </body>
+</html>
